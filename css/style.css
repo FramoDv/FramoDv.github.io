@@ -1,0 +1,707 @@
+/*
+* personal style for Framo site Home page
+* author: Francesco Monti 
+*/
+
+
+/*
+color scheme
+dark green : #043B34
+ligth green: #1ed480
+ligth sea green :#21E387
+alt withe: #FAFBFB
+dark withe : #dfdfdf
+cyan dark 1: #04B46C
+cyan dark 2: #04B664
+*/
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+/*----------- NAVBAR -----------*/
+
+.button-wrap {
+    height: 50px;
+    width: 60px;
+    position: fixed;
+    background-color: #043b34;
+    ;
+    z-index: 1000;
+}
+
+.button-wrap:clicked {
+    background-color: transparent;
+}
+
+#over .button-wrap {
+    background-color: transparent;
+}
+
+.over {
+    position: fixed;
+    background-image: linear-gradient(0deg, #21E387 10%, #043B34 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    /* before menu open */
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    /* img-gradient: */
+}
+
+.open {
+    /* this class represent aspect of opened menu */
+    opacity: 80;
+    visibility: visible;
+    height: 100%;
+    position: fixed;
+    z-index: 1001;
+}
+
+.icon-menu,
+.icon-close {
+    padding: 8px 0px 0px 2px;
+}
+
+nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    /*transform: translateY(-50%);*/
+    font-size: 50px;
+    /*font-family: Roboto;*/
+    font-weight: 400;
+    text-align: center;
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+nav ul {
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+
+nav ul li {
+    display: block;
+    height: calc(100% / 4);
+    min-height: 50px;
+    position: relative;
+    float: none;
+}
+
+nav ul li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+nav ul li:hover:after {
+    width: 100%;
+    background: #FAFBFB;
+}
+
+nav ul li a {
+    display: block;
+    position: relative;
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 40px;
+    font-weight: 500;
+    /*font-family: Roboto;*/
+    color: #FAFBFB;
+}
+
+nav ul li a:hover {
+    background-color: transparent;
+}
+
+
+/*----- First part ------*/
+
+#me {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px 30px 0px;
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#test {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#mepic {
+    /* for smaller device */
+    width: 150px;
+    height: 150px;
+    display: none;
+    border: 2px solid #FAFBFB;
+    border-radius: 100px;
+    border-spacing: 5px;
+}
+
+#entry-txt {
+    margin: 0px 60px 0px 60px;
+    border-left: 3px solid #FAFBFB;
+}
+
+@keyframes changepos {
+    from {
+        padding-top: 0px;
+    }
+    to {
+        padding-top: 8px;
+    }
+}
+
+.icon-down {
+    animation-duration: 1s;
+    animation-name: changepos;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#down {
+    height: 44px !important;
+}
+
+
+/*------- icon ------*/
+
+<<<<<<< HEAD
+.icon,
+.icon-big {
+=======
+.icon , .icon-big{
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
+    display: table !important;
+}
+
+.icon {
+    font-size: 30px!important;
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    color: #FAFBFB !important;
+    margin: 0 auto;
+}
+
+.icon-big {
+    margin: 25px auto 0px auto !important;
+=======
+>>>>>>> Stashed changes
+    color: #FAFBFB!important;
+    margin: 0 auto;
+}
+
+.icon-big{
+    margin: 25px auto 0px auto; 
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
+    font-size: 120px!important;
+}
+
+.icon-social {
+    font-size: 30px!important;
+    color: #212121;
+    margin: 0 !important;
+}
+
+.social-wrap {
+    margin: 10px;
+}
+
+.icon-instagram {
+    color: #f216B7!important;
+}
+
+.icon-github {
+    color: #333!important;
+}
+
+.icon-codepen {
+    color: #000!important;
+}
+
+.icon-twitter {
+    color: #1da1f2!important;
+}
+
+.icon-linkedin {
+    color: #1188ff!important;
+}
+
+.icon-gplus {
+    color: #ec4335!important;
+<<<<<<< Updated upstream
+=======
+}
+
+<<<<<<< HEAD
+.icon-web,
+.icon-design {
+    color: #21E387!important;
+>>>>>>> Stashed changes
+}
+
+.icon-code {
+    color: #FAFBFB!importan;
+=======
+.icon-web, .icon-design{
+    color: #21E387!important;
+}
+
+.icon-code{
+    color: #FAFBFB!important;
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
+}
+
+
+/*----- Text -----*/
+
+h1 {
+    font-size: 60px;
+    color: #FAFBFB;
+    font-weight: 700;
+    margin: 8% auto;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 30px auto;
+}
+
+#about h2,
+#contact h2 {
+    color: #dfdfdf;
+}
+
+#skills h2 {
+    color: #21E387;
+}
+
+.not-visible-on-l-and-xl {
+    display: none;
+}
+
+h3 {
+    margin: 40px 0px 30px 0px;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#about h3 {
+    color: #043B34;
+}
+
+#about h4,
+#about h5 {
+    color: #04B46C;
+}
+
+#desc p {
+    margin: 16px 0px;
+}
+
+#contact h3 {
+    color: #043B34;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 24px;
+    margin: 17px 0px 0px 0px;
+    text-align: left;
+}
+
+p {
+    font-size: 20px;
+}
+
+#about p {
+    color: #212121;
+}
+
+#place p {
+    font-size: 16px;
+}
+
+
+/*------- side img --------*/
+
+.side-img {
+    display: inline-block;
+}
+
+.imgabout {
+    height: 466px;
+    margin: 400px auto;
+    background-image: url(../img/A%20B%20O%20U%20T.png);
+}
+
+.imgskill {
+    height: 570px;
+    margin: 70px auto;
+    background-image: url(../img/S%20K%20I%20L%20L%20S.png);
+}
+
+.imgcontact {
+    height: 667px;
+    background-image: url(../img/C%20O%20N%20T%20A%20C%20T.png);
+}
+
+.imgskill,
+.imgabout,
+.imgcontact {
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+/*-------- general for section -------*/
+
+
+/*
+#about,
+#skills,
+#contact {
+    padding-left: 60px;
+}
+*/
+
+#skills {
+    background-color: #043B34;
+}
+
+#adjust {
+    padding-left: 0px !important;
+    margin-bottom: 20px;
+}
+
+#skills li {
+    color: #FAFBFB;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 10px 0px 10px 0px;
+}
+
+
+/*-------- card -------*/
+
+.card,
+.card-action {
+    position: inherit !important;
+    z-index: 5;
+}
+
+.skill-card-content {
+    padding: 10px;
+}
+
+.green-card,
+.white-card {
+    margin: 25px 0px 25px 0px;
+}
+
+.green-card {
+    background-color: #21E387 !important;
+}
+
+.white-card {
+    background-color: #FAFBFB !important;
+}
+
+.green-card h3,
+.green-card p {
+    color: #043B34;
+}
+
+.white-card h3,
+.white-card p {
+    color: #043B34;
+}
+
+.green-card h3,
+.green-card p,
+.white-card h3,
+.white-card p {
+    margin: 0px;
+}
+
+.green-card p,
+.white-card p {
+    padding: 0px 5px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.green-card .card-action,
+.white-card .card-action {
+    border-top: 3px solid !important;
+}
+
+.green-card .card-action,
+.white-card .card-action {
+    border-top-color: #043B34 !important;
+}
+
+.btn-card-white,
+.btn-card-green {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.btn-card-green {
+    background-color: #043B34;
+}
+
+.btn-card-white {
+    background-color: #043B34;
+}
+
+.btn-card-white a,
+.btn-card-green a {
+    padding: 3px;
+    margin: 0 auto !important;
+    display: table;
+    text-transform: lowercase !important;
+}
+
+.btn-card-green a {
+    color: #21E387 !important;
+}
+
+.btn-card-white a {
+    color: #FAFBFB !important;
+}
+
+
+/*-------- contact section ---------
+
+form {
+    width: auto;
+    max-width: 400px;
+    margin: 40px auto;
+    display: table;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=text]:focus:not([readonly])+label,
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 0px;
+    box-shadow: none;
+    color: #043B34;
+}
+
+form label {
+    font-weight: 500;
+    font-size: 18px;
+    display: block;
+    margin: 10px 0px;
+    color: #043B34;
+}
+
+form p label {
+    font-weight: 300;
+    font-size: 16px;
+    color: #043B34;
+}
+
+
+/* cecked e unchecked styling 
+
+[type="checkbox"].filled-in:not(:checked)+label:after {
+    border-color: #043B34 !important;
+}
+
+[type="checkbox"].filled-in:checked+label:after {
+    border-color: #04B46C;
+    background-color: #04B46C;
+}
+
+form input,
+form textarea {
+    box-sizing: border-box !important;
+    outline: none;
+    width: 100%;
+    /* toglie l' ombretta blu del 
+    font-size: 15px;
+    border: 2px solid #043B34 !important;
+    margin: 0px 0px 10px 0px !important;
+    padding: 10px !important;
+    font-weight: 300;
+}
+
+form p {
+    margin-top: 0px;
+}
+
+form textarea {
+    height: auto;
+    resize: none;
+}
+
+#send {
+    font-size: 38px;
+    color: #04B46C;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    border: none !important;
+    background-color: #043B34;
+}
+
+@keyframes btnwoo {
+    from {
+        color: #043B34;
+        background-color: #04B46C;
+    }
+    to {
+        color: #04B46c;
+        background-color: #043b34;
+    }
+}
+
+#send:focus,
+#send:hover {
+    animation-duration: 1s;
+    animation-name: btnwoo;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+}
+*/
+
+#info {
+    margin: 50px auto;
+    /* assottiglia gia da 1024 */
+}
+
+#info h4 {
+    color: #043B34;
+    font-weight: 400;
+}
+
+#info p,
+#info p a {
+    color: #04B46C;
+    font-weight: 300;
+}
+
+.social-wrap,
+.social-wrap div {
+    padding: 0px !important;
+}
+
+#posta {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ----- footer ------ */
+
+footer {
+    height: auto;
+    width: 100%;
+    font-weight: 400;
+    background-color: #043B34;
+    color: #04B46C;
+}
+
+footer p {
+    margin: 0px auto;
+    padding: 10px 0px;
+    display: table;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer p .icon-heart {
+    font-size: 14px!important;
+    color: #04B46C !important;
+    display: inline-block!important;
+}
+
+
+/* portfolio */
+
+.construction {
+    text-align: center;
+    margin: 25% auto;
+    color: #04B46C;
+}
+
+#conts {
+    height: auto;
+}
+
+
+/* country choice */
+
+img.responsive-img {
+    margin: 0 auto;
+    display: table;
+}
+
+a img {
+    width: 28%;
+}
+
+.len {
+    margin: 25px 0px 0px 0px;
+}

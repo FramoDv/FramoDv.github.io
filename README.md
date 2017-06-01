@@ -1,2 +1,2 @@
-# framodv.github.io
+# FramoDev.github.io
 personal site repository

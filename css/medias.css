@@ -1,0 +1,181 @@
+@media only screen and (max-width: 1024px) {
+    #me {
+        background-image: linear-gradient(0deg, #21E387 10%, #043B34 100%);
+    }
+    #mepic {
+        display: inherit;
+    }
+}
+
+
+/* medias for  better text on all screen size */
+
+@media only screen and (min-width: 2560px) {
+    h1 {
+        font-size: 90px;
+    }
+    #entry-txt {
+        margin: 125px 90px;
+    }
+    .len {
+        margin: 150px 0px 0px 0px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    h1 {
+        font-size: 90px;
+    }
+    #entry-txt {
+        margin: 125px 60px;
+    }
+    .button-wrap {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size: 48px;
+    }
+    #entry-txt {
+        margin: 30px auto;
+    }
+    .button-wrap {
+        top: 0px;
+        right: 0px;
+    }
+    a img {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    #entry-txt {
+        margin: 30px auto;
+    }
+    #mepic {
+        margin: 30px 0px 0px 30px;
+    }
+    a img {
+        width: 55%;
+        height: 55%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    h1,
+    h2 {
+        font-size: 33px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    #about>p {
+        margin: 0.75rem;
+    }
+    #entry-txt {
+        margin: 60px auto;
+        border-left: none;
+    }
+    #skills li {
+        font-size: 20px;
+    }
+    #mepic {
+        margin: 30px 0px 0px 0.75rem;
+    }
+    a img {
+        width: 60%;
+        height: 60%;
+    }
+    .len {
+        margin: 50px 0px 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    h1 {
+        font-size: 28px;
+    }
+    #entry-txt {
+        margin: 30px auto;
+        border-left: none;
+    }
+    .len {
+        margin: 50px 0px 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 28px;
+    }
+    #entry-txt {
+        margin: 30px auto;
+        border-left: none;
+    }
+    .len {
+        margin: 50px 0px 0px 0px;
+    }
+}
+
+
+/* per sicurezza copro img al lato*/
+
+@media only screen and (max-width: 1024px) {
+    .imgskill,
+    .imgcontact,
+    .imgabout {
+        display: none;
+    }
+    .not-visible-on-l-and-xl {
+        display: table;
+    }
+}
+
+
+/* allineare contenuto */
+
+@media only screen and (max-width: 768px) {
+    #info {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #info {
+        margin-top: 0px;
+    }
+}
+
+
+/* hide arrow */
+
+@media only screen and (max-height: 560px) {
+    #down {
+        display: none;
+    }
+}
+
+
+/* container adjustment */
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 85% !important;
+    }
+}
