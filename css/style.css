@@ -195,41 +195,25 @@ nav ul li a:hover {
 
 /*------- icon ------*/
 
-<<<<<<< HEAD
 .icon,
 .icon-big {
-=======
-.icon , .icon-big{
-<<<<<<< Updated upstream
-=======
->>>>>>> origin/master
->>>>>>> Stashed changes
     display: table !important;
 }
 
 .icon {
     font-size: 30px!important;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
     color: #FAFBFB !important;
     margin: 0 auto;
 }
 
 .icon-big {
     margin: 25px auto 0px auto !important;
-=======
->>>>>>> Stashed changes
     color: #FAFBFB!important;
     margin: 0 auto;
 }
 
-.icon-big{
-    margin: 25px auto 0px auto; 
-<<<<<<< Updated upstream
-=======
->>>>>>> origin/master
->>>>>>> Stashed changes
+.icon-big {
+    margin: 25px auto 0px auto;
     font-size: 120px!important;
 }
 
@@ -265,30 +249,15 @@ nav ul li a:hover {
 
 .icon-gplus {
     color: #ec4335!important;
-<<<<<<< Updated upstream
-=======
 }
 
-<<<<<<< HEAD
 .icon-web,
 .icon-design {
     color: #21E387!important;
->>>>>>> Stashed changes
 }
 
 .icon-code {
     color: #FAFBFB!importan;
-=======
-.icon-web, .icon-design{
-    color: #21E387!important;
-}
-
-.icon-code{
-    color: #FAFBFB!important;
-<<<<<<< Updated upstream
-=======
->>>>>>> origin/master
->>>>>>> Stashed changes
 }
 
 
