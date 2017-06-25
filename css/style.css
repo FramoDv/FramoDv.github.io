@@ -26,11 +26,10 @@ body {
 /*----------- NAVBAR -----------*/
 
 .button-wrap {
-    height: 50px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     position: fixed;
     background-color: #043b34;
-    ;
     z-index: 1000;
 }
 
@@ -66,18 +65,13 @@ body {
     z-index: 1001;
 }
 
-.icon-menu,
-.icon-close {
-    padding: 8px 0px 0px 2px;
-}
-
 nav {
     position: relative;
     height: 70%;
     top: 50%;
     transform: translateY(-50%);
     /*transform: translateY(-50%);*/
-    font-size: 50px;
+    font-size: 30px;
     /*font-family: Roboto;*/
     font-weight: 400;
     text-align: center;
@@ -97,7 +91,7 @@ nav ul {
 
 nav ul li {
     display: block;
-    height: calc(100% / 4);
+    height: calc(100% / 5);
     min-height: 50px;
     position: relative;
     float: none;
@@ -125,7 +119,7 @@ nav ul li a {
     background-color: transparent;
     text-decoration: none;
     overflow: hidden;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     /*font-family: Roboto;*/
     color: #FAFBFB;
@@ -133,6 +127,14 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: transparent;
+}
+
+#social-menu a {
+    display: inline-block;
+}
+
+#social-menu a i {
+    color: #fff !important;
 }
 
 
@@ -678,4 +680,14 @@ a img {
 
 .len {
     margin: 25px 0px 0px 0px;
+}
+
+
+/* menu icons open and close */
+
+.icon-menu,
+.icon-close {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 24px !important;
 }

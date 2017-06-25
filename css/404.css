@@ -1,0 +1,49 @@
+h1,h2{
+    font-weight: bold;
+}
+
+h1{
+    font-size: 200px;
+}
+
+h5,ul li,#error{
+    text-align: center;
+}
+
+h5{
+    font-weight: 500;
+    color: #043B34;
+}
+
+ul li a{
+    font-size: 16px;
+}
+
+ul li a,h2,h1{
+     color: #20E186;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.divider{
+    background-color: #043B34!important;
+}
+
+#error{
+    width: auto;
+    float: none !important;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 425px) {
+    h1 {
+      font-size: 100px;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+    }
+}
