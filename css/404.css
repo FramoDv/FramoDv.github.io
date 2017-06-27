@@ -35,7 +35,6 @@ img{
 #error{
     width: auto;
     float: none !important;
-    margin-top: 50px;
 }
 
 @media only screen and (max-width: 425px) {
